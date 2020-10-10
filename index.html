@@ -14,10 +14,18 @@
            *{
                font-family: Open Sans;
            }
+		   .navbar {
+		       
+		       overflow:hidden;
+               position: fixed;
+               width: 100%;
+			   top: 0;
+             }
+			 
        </style>
   </head>
   <body>
-   <nav style="background: linear-gradient(to right, #673ab7, #512da8);" class="navbar navbar-expand-xl navbar-dark text-white">
+   <nav style="background: linear-gradient(to right, #673ab7, #512da8); z-index: 3;" class="navbar navbar-expand-xl navbar-dark text-white">
 
         <a class="navbar-brand" href="#">Blossom</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +33,7 @@
         </button>
     
         <div class="collapse navbar-collapse" id="navbarsExample06">
-          <ul  class="navbar-nav mr-auto">
+          <ul  class="navbar-nav ml-auto">
             <li class="nav-item ">
               <a class="nav-link" href="#">Home </a>
             </li>
@@ -33,13 +41,13 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Testimonial</a>
+              <a class="nav-link " href="#Testimonials">Testimonial</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Register</a>
+                <a class="nav-link" href="#Register">Register</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>
@@ -48,7 +56,10 @@
           </ul>
         </div>
       </nav>
-        <section>
+
+        <section id="Testimonials">
+		<br><br>
+
           <h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Testimonials</h1>
         <h3 class="text-center m-5">
             Here are some testimonials from our wonderful students
@@ -107,7 +118,9 @@
 
 
         
-<section>
+
+<section id="Register">
+
   <hr>
   <div class="card text-white  mb-3 " style="background-color: #222;max-width: 25rem;position:relative;margin:auto;top:10vh;left:0;bottom:0;right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
     <div style="letter-spacing: 2px;" class="card-header text-center m-3"><h3>Register</h3></div>
