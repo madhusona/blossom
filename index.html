@@ -13,18 +13,28 @@
            *{
                font-family: Open Sans;
            }
-       </style>
+           
+		   .navbar {
+		       
+		       overflow:hidden;
+               position: fixed;
+               width: 100%;
+			   top: 0;
+             }
+			 
+  </style>
   </head>
-  <body>
-   <nav style="background: linear-gradient(to right, #673ab7, #512da8);" class="navbar navbar-expand-xl navbar-dark text-white">
+  <body class="main" data-spy="scroll" data-target="#navbarsExample06">
+  <header>
+   <nav style="background: linear-gradient(to right, #673ab7, #512da8); z-index: 3;" class="navbar navbar-expand-xl navbar-dark navbar-fixed-top text-white ">
 
         <a class="navbar-brand" href="#">Blossom</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     
-        <div class="collapse navbar-collapse" id="navbarsExample06">
-          <ul  class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse " id="navbarsExample06">
+          <ul  class="navbar-nav nav navbar-nav ml-auto">
             <li class="nav-item ">
               <a class="nav-link" href="#">Home </a>
             </li>
@@ -32,13 +42,13 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Testimonial</a>
+              <a class="nav-link " href="#Testimonials">Testimonial</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Register</a>
+                <a class="nav-link" href="#Register">Register</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>
@@ -47,6 +57,118 @@
           </ul>
         </div>
       </nav>
+	  </header>
+	  <nav>
+	  </nav>
+	  
+	  
+        <section id="Testimonials">
+		<br><br><br>
+          <h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Testimonials</h1>
+          <h3 class="text-center m-5">
+              Here are some testimonials from our wonderful students
+          </h3>
+		  
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-12">
+                      <div class="card mt-4" style="width: 100%;">
+                          <img src="https://blog.hubspot.com/hubfs/Customer-testimonial-page.jpg" class="card-img-top" alt="...">
+                          <div style='height: 17rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white">
+                            <p class="card-text">“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.”</p>
+                              <p style="font-weight: bold;letter-spacing: 1px;font-size: 14px;" class="card-text text-right"> - Alina Robert</p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-12">
+                      <div class="card mt-4" style="width: 100%;">
+                          <img src="https://blog.hubspot.com/hubfs/Testimonial-lead-gen-1.jpg" class="card-img-top" alt="...">
+                          <div style='height: 17rem;background-color: #222;' class="card-body p-5 text-white">
+                            <p class="card-text">“You made it so simple. Your site is so much faster and easier to work . I just learn many of neccessary things through this amazing platform.
+                              Thanks, guys!”</p>
+                              <p  style="font-weight: bold;letter-spacing: 1px;font-size: 14px;" class="card-text text-right"> - George Lanson</p>
+      
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-12">
+                      <div class="card mt-4" style="width: 100%;">
+                          <img src="https://infra-cloudfront-talkdeskcom.talkdesk.com/talkdesk_com/2018/05/15193411/hero-image-how-to-use-csat-to-improve-call-center-customer-experience-1740x1160.jpg" class="card-img-top" alt="...">
+                          <div style='height: 17rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white">
+                            <p class="card-text">“Wow. I just registered and it was so simple. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives! Keep it up.”</p>
+                            <p style="font-weight: bold;letter-spacing: 1px;font-size: 14px;" class="card-text text-right"> - Marcey Queens</p>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+      
+              <div class="row">
+                  <div class="col-lg-2 col-sm-12 col-12"></div>
+                  <div class="col-lg-4 col-sm-12 col-12">
+                      <div class="card mt-4" style="width: 100%;">
+                          <img src="https://blog.hubspot.com/hubfs/Customer-testimonials-1.jpg" class="card-img-top" alt="...">
+                          <div style='height: 17rem;background-color: #222;' class="card-body p-5  text-white">
+                            <p class="card-text">“Gosh . This is seriously good stuff here. I’ve shared it around. Now I need to go back and check how I’ve used the ones I already have.”</p>
+                            <p style="font-weight: bold;letter-spacing: 1px;font-size: 14px;" class="card-text text-right"> - Elsa Flora</p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-12">
+                      <div class="card mt-4" style="width: 100%;">
+                          <img src="https://www.wes.org/wp-content/uploads/2017/01/international-students-and-skilled-immigrants.jpg" class="card-img-top" alt="...">
+                          <div style='height: 17rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white">
+                            <p class="card-text">“I just wanted to let you know that it’s been great working with you. Perfect, well presented with easy to follow directions.Excellent useful information.”
+                          </p>
+                          <p style="font-weight: bold;letter-spacing: 1px;font-size: 14px;" class="card-text text-right"> - Morgan Stark</p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-lg-2 col-sm-12 col-12"></div>
+              </div>
+      
+          </div>
+       <br><br><br>
+
+        </section>
+
+
+        
+<section id="Register">
+  <hr>
+  <div class="card text-white  mb-3 " style="background-color: #222;max-width: 25rem;position:relative;margin:auto;top:10vh;left:0;bottom:0;right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div style="letter-spacing: 2px;" class="card-header text-center m-3"><h3>Register</h3></div>
+    <div class="card-body mt-1 mb-3">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputName">Name</label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="exampleInputName" required>
+              </div>
+              <br>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required >
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1"  required>
+            </div>
+            <br>
+            <div class="form-group pb-2">
+                <label for="exampleInputPassword2">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2"  required>
+              </div>
+              <hr>
+           <div class="text-center pt-2">
+            <button style="  background: linear-gradient(to right, #673ab7, #512da8);" type="submit" class="btn text-white btn-lg btn-block rounded-pill">Register</button>
+           </div>
+          </form>
+
+    </div>
+  </div>
+  <br><br><br><br><br>
+</section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
