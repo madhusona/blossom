@@ -1,5 +1,4 @@
 <!doctype html>
-<! -- checking -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -12,12 +11,18 @@
 
 	
 	<link rel="stylesheet" href="css/style.css">
+
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
        
   <!--for testimonial carousal-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/carousel.css">
+
+ 
+  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
 
 
 
@@ -300,8 +305,8 @@
 
         <form name="submit-to-google-sheet">
             <div class="form-group">
-                <label for="exampleInputName">Name</label>
-                <input name="name" type="text" class="form-control" id="exampleInputName" aria-describedby="exampleInputName" required>
+                <label for="name">Name</label>
+                <input name="name" type="text" class="form-control" id="name" aria-describedby="name" required>
               </div>
               <br>
             <div class="form-group">
@@ -333,6 +338,19 @@
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
+                
+               
+                 var Stud_name = document.getElementById('name').value;
+
+                        Email.send({
+                            SecureToken : "8489df9a-9429-4551-ad95-9a9a2bb0354a",
+                            To : 'admin@blossom.org.in',
+                            From : "18ita13@karpagamtech.ac.in",
+                            Subject : "Blossom | Notification",
+                            Body : Stud_name +" is registered."
+                        }).then(
+                          message => alert(message)
+                        );
             })
           </script>
           
