@@ -15,9 +15,6 @@
 	
 	
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     
 
@@ -160,7 +157,7 @@
                         </div>
                   </div>
                   <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4 " style="width: 65%; height= 80%;">
+                      <div class="card mt-4 " style="width: 65%; height: 80%;">
                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRoh8yMdvm6o1tLVHyfBxG4HXXJLoA-TzMnnQ&usqp=CAU" class="card-img-top" alt="...">
                           <div style='height: 8rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white text-center">
                           <a href="#" class="btn btn-dark stretched-link" ><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text">Tenses</p></a>
@@ -293,31 +290,45 @@
   <div class="card text-white  mb-3 " style="background-color: #222;max-width: 25rem;position:relative;margin:auto;top:10vh;left:0;bottom:0;right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
     <div style="letter-spacing: 2px;" class="card-header text-center m-3"><h3>Register</h3></div>
     <div class="card-body mt-1 mb-3">
-        <form>
+
+        <form name="submit-to-google-sheet">
             <div class="form-group">
                 <label for="exampleInputName">Name</label>
-                <input type="text" class="form-control" id="exampleInputName" aria-describedby="exampleInputName" required>
+                <input name="name" type="text" class="form-control" id="exampleInputName" aria-describedby="exampleInputName" required>
               </div>
               <br>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required >
+              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required >
             </div>
             <br>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1"  required>
+              <label for="exampleInputPassword1">Mobile Number</label>
+              <input name="mobile" type="number" class="form-control" id="exampleInputPassword1" min="0" required>
             </div>
             <br>
-            <div class="form-group pb-2">
-                <label for="exampleInputPassword2">Confirm Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword2"  required>
-              </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Course name</label>
+              <input name="course" type="text" class="form-control" id="exampleInputPassword2" required>
+            </div>
               <hr>
            <div class="text-center pt-2">
-            <button style="  background: linear-gradient(to right, #673ab7, #512da8);" type="submit" class="btn text-white btn-lg btn-block rounded-pill">Register</button>
+            <button type="submit" style="  background: linear-gradient(to right, #673ab7, #512da8);"  class="btn text-white btn-lg btn-block rounded-pill">Register</button>
            </div>
           </form>
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwRBaUUrqXy8mB2QYOC8NB4B2JTm1AofeLQKxroBxuo8RtLJpw/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          
 
     </div>
   </div>
