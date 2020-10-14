@@ -1,5 +1,4 @@
 <!doctype html>
-<! -- checking -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -9,17 +8,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <!--for testimonial carousal-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-	
+
 	
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+       
+  <!--for testimonial carousal-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/carousel.css">
+
+ 
+  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
     
+
 
 
 
@@ -29,6 +33,7 @@
 	<style>
            *{
                font-family: Open Sans;
+               scroll-behavior: smooth;
            }
 		   .navbar {
 		       
@@ -37,6 +42,16 @@
                width: 100%;
 			   top: 0;
              }
+			 #card{
+              box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+              transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+              cursor: pointer;
+             }
+
+            #card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+            }
 			 
        </style>
   </head>
@@ -56,34 +71,34 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#Testimonials">Testimonial</a>
-            </li>
+            
 			 <li class="nav-item">
               <a class="nav-link " href="#Online">Online courses</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link "  href="#Testimonials">Testimonial</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Register">Register</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-			  
 			  <li class="nav-item">
                 <a class="nav-link" href="#Videos">Videos</a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="#Register">Register</a>
+              </li>
+           
+			  
+			  
           </ul>
         </div>
       </nav>
 	  
 	  
 	  <section id="Online">
-	  <br><br>
-	  <h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Online Courses</h1>
+      <br><br>
+	  <br><h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Online Courses</h1>
           <h3 class="text-center m-5">
               Here are the courses we offer to our wonderful students!
           </h3>
@@ -91,234 +106,263 @@
 		<div class="container">
               <div class="row">
                  <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4" style="width: 75%;">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQuTWUHI0gndfcgdTS96Y0i64fH3Q0vzVhdfw&usqp=CAU" height="40%" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white text-center">
-                            <a href="#" class="btn btn-dark stretched-link" ><p style="font-weight: bold;font-size: 14px; text-align:center; " class="card-text">Grammer</p></a>
-                              
+                      <div id="card" class="card mt-4" style="width: 100%;">
+                          <img src="https://media.istockphoto.com/vectors/english-vector-id1047570736?k=6&m=1047570736&s=612x612&w=0&h=2h18RI-8EAVQlrGrtZZ3mcLJ7drJ7f-aOPAcksc9U0I=" height="40%" class="card-img-top" alt="...">
+                          <div style='height: 10rem;background: white;' class="card-body p-5 text-black text-center">
+                            <h2 class=" text-dark text-center">Grammer</h2>
+							
+					
+                            <a href="#" >View details</a>
                           </div>
                         </div>
                   </div>
-                  <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4 " style="width: 70%; height:93%;">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0p7JV-sGlLhK93Thk7uf98YHQPn-IFpGkAA&usqp=CAU" height="50%" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background-color: #222;' class="card-body p-5 text-white text-center">
-                           <a href="#" class="btn btn-dark stretched-link"style="background:linear-gradient(to right, #673ab7, #512da8);" ><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text">Business Grammer</p></a>
-                              
-      
-                          </div>
+                  <div  class="col-lg-4 col-sm-12 col-12">
+                    <div id="card" class="card mt-4" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-vector/digital-marketing-team_41910-363.jpg?size=626&ext=jpg" height="40%" class="card-img-top" alt="...">
+                        <div style='height: 10rem;background: white;' class="card-body p-5 text-white text-center">
+                          <h2 class=" text-dark text-center">Marketing</h2>
+						 
+                          <a href="#" >View details</a>
                         </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4" style="width: 70%; height:93%">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbFdPLt3FlgMMATaoIM2wvm7k6UkXzFCel0Q&usqp=CAU" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white text-center">
-                           <a href="#" class="btn btn-dark stretched-link" "><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text">Voice and Accent course</p></a>
-                            
-                          </div>
-                        </div>
-                  </div>
+                      </div>
+                </div>
+                <div  class="col-lg-4 col-sm-12 col-12">
+                  <div id="card" class="card mt-4" style="width: 100%;">
+                      <img src="https://image.freepik.com/free-vector/vocabulary-illustration-flat-tiny-words-knowledge-persons-concept-familiar-language-development-learning-communication-skills-teacher-practice-acquiring-extensive-literature-text_126608-602.jpg" height="100%" class="card-img-top" alt="...">
+                      <div style='height: 11rem;background: white;padding-top:65px' class="card-body  text-white text-center">
+                        <h2 class=" text-dark text-center">Vocabulory</h2>
+				
+                        <a href="#" >View details</a>
+                      </div>
+                    </div>
+              </div>
+                
+
               </div>
           </div>
        <br>
           <div class="container">
               <div class="row">
                   <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4" style="width: 75%;">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTq7KitqjgrM4E7sYufHrJoMhllGdG5tJUzQg&usqp=CAU" height="100%" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white text-center">
-                            <a href="#" class="btn btn-dark stretched-link" ><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text">Email writing course</p></a>
-                          </div>
+                    <div id="card" class="card mt-4" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-vector/woman-holds-mail-chatting-business-illustration-working-process_126608-115.jpg?size=626&ext=jpg&ga=GA1.2.1173840243.1600992000" height="40%" class="card-img-top" alt="...">
+                        <div style='height: 12rem;background: white;padding-top:60px' class="card-body  text-white text-center">
+                          <h2 class=" text-dark text-center">Email Writing</h2>
+						
+                          <a href="#" >View details</a>
                         </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4 w-20" style="width: 70%; height:90%;">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcFZh_Csf0qRdSsZ5mh_rxJgBoerydxRK3lQ&usqp=CAU" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background-color: #222;' class="card-body p-5 text-white text-center">
-                            <a href="#" class="btn btn-dark stretched-link" style="background:linear-gradient(to right, #673ab7, #512da8);" ><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text">English for Kids</p></a>
-                          </div>
-                        </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4" style="width: 70%; height:90%">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRG6aHke7yZ58RC30__zwTWe5y7kzTo9jwx-A&usqp=CAU" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white text-center">
-                            <a href="#" class="btn btn-dark stretched-link" ><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text">Self spoken English</p></a>
-                          </div>
-                        </div>
-                  </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-12 ">
+                  <div id="card" class="card mt-4 cardpop" style="width: 100%;">
+                      <img style="padding-top: 15px;" src="https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?size=626&ext=jpg" height="40%" class="card-img-top" alt="...">
+                      <div style='height: 11.9rem;background: white;padding-top:55px' class="card-body  text-white text-center">
+                        <h2 class=" text-dark text-center">Business English</h2>
+				
+                        <a href="#" >View details</a>
+                      </div>
+                    </div>
               </div>
+              <div class="col-lg-4 col-sm-12 col-12">
+                <div id="card" class="card mt-4" style="width: 100%;">
+                    <img  src="https://talentlens.in/wp-content/uploads/2019/09/VOXY_VECTOR.png" height="40%" class="card-img-top" alt="...">
+                    <div style='height: 13.5rem;background: white;padding-top:80px' class="card-body  text-white text-center">
+                      <h2 class=" text-dark text-center">Self Spoken English</h2>
+		
+                      <a href="#" >View details</a>
+                    </div>
+                  </div>
+            </div>
       <br>
-              <div class="row">
-                  <div class="col-lg-2 col-sm-12 col-12"></div>
-                  <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4" style="width: 70%; height:90%;">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMbRb06THriPkphdNGC9hx8c5kjsK3TsXjWg&usqp=CAU" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background-color: #222;' class="card-body p-5  text-white text-center">
-                           <a href="#" class="btn btn-dark stretched-link" style="background:linear-gradient(to right, #673ab7, #512da8);"><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text"> Vocabulory</p></a>
-                          </div>
-                        </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-12 col-12">
-                      <div class="card mt-4 " style="width: 65%; height= 80%;">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRoh8yMdvm6o1tLVHyfBxG4HXXJLoA-TzMnnQ&usqp=CAU" class="card-img-top" alt="...">
-                          <div style='height: 8rem;background: linear-gradient(to right, #673ab7, #512da8);' class="card-body p-5 bg-dark text-white text-center">
-                          <a href="#" class="btn btn-dark stretched-link" ><p style="font-weight: bold;font-size: 14px; text-align:center;" class="card-text">Tenses</p></a>
-                          </div>
-                        </div>
-                  </div>
-				  
-                  <div class="col-lg-2 col-sm-12 col-12"></div>
-              </div>
+             
       
           </div>
-       <br><br><br>
-
+          </div>
+       <br><br><hr>
         </section>
 
 
 
-        <section id="Testimonials">
+       
+           <!-- TESTIMONIALS -->
+      <section class="testimonials" id="Testimonials">
+	  <br><br><br>
+      <h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Testimonials</h1>
+      <h3 class="text-center m-5">
+          Testimonials of our adorable students
+      </h3>
+      <br>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-12">          <br>
+      <div style="height: 60vh;" id="customers-testimonials" class="owl-carousel">
+
+        <!--TESTIMONIAL 1 -->
+        <div class="item">
+          <div class="shadow-effect">
+            <p>"You made it so simple. Your site is so much faster and easier to work . 
+              I just learn many of neccessary things through this amazing platform."</p>
+          </div>
+          <div class="testimonial-name">George Lanson</div>
+        </div>
+        <!--END OF TESTIMONIAL 1 -->
+        <!--TESTIMONIAL 2 -->
+        <div class="item">
+          <div class="shadow-effect">
+            <p>“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.”</p>
+          </div>
+          <div class="testimonial-name">Alina Robert</div>
+        </div>
+        <!--END OF TESTIMONIAL 2 -->
+        <!--TESTIMONIAL 3 -->
+        <div class="item">
+          <div class="shadow-effect">
+            <p>“Wow. I just registered and it was so simple. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives! Keep it up.It was wonderful”</p>
+          </div>
+          <div class="testimonial-name">Marcey Queens</div>
+        </div>
+        <!--END OF TESTIMONIAL 3 -->
+        <!--TESTIMONIAL 4 -->
+        <div class="item">
+          <div class="shadow-effect">
+            <p>“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.”</p>
+          </div>
+          <div class="testimonial-name">Lolita</div>
+        </div>
+        <!--END OF TESTIMONIAL 4 -->
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
           
-          <br><br><br>
-      
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title" style="text-align: center; margin-bottom: 60px;">
-                            <h2 style="font-weight: 700;letter-spacing: 1px; font-size:50px">Testimonials</h2>
-                            <h3  style="font-weight: 600; font-size:20px "class="text-center m-5 ">
-                              <i>Here are some testimonials from our wonderful students . . .</i>
-                          </h3>
-                    
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="owl-carousel client-testimonial-carousel">
-                            <div class="single-testimonial-item" style ="box-shadow: 0 0 2px  #dad2e9 ; position: relative; margin: 2px; padding: 20px; background-color: #333333; color: white">
-                              <div class="card-body" style="background-color: #333333; color: white">
-                                  <p class="card-text" style="font-size: 15px;">“You made it so simple. Your site is so much faster and easier to work . 
-                                    I just learn many of neccessary things through this amazing platform.Thank you guys!"</p>
-                                    <br>
-                                    <h3  style="font-weight: 600;">- George Lanson</h3>
-                                </div>
-                              </div>
-                            
-                            <div class="single-testimonial-item" style ="box-shadow: 0 0 2px #dad2e9; position: relative; margin: 2px; padding: 20px; background-color: #673ab7; color: white" >
-                              <div class="card-body" style="background-color: #673ab7; color: white">
-                                <p class="card-text" style="font-size: 15px;">“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.”</p>
-                                <br>
-                                <h3  style="font-weight: 600;">- Alina Robert</h3>
-                              </div>
-                            </div>
-                            <div class="single-testimonial-item"  style ="box-shadow: 0 0 2px#dad2e9; position: relative; margin: 2px; padding: 20px; color: bg-dark; background-color: #333333; color: white">
-                              <div class="card-body" style="background-color: #333333; color: white">
-                                <p class="card-text" style="font-size: 15px;">“Wow. I just registered and it was so simple. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives! Keep it up.It was wonderful”</p>
-                                <br>
-                                <h3  style="font-weight: 600;">- Marcey Queens</h3>
-                              </div>
-                            </div>
-                            <div class="single-testimonial-item"  style ="box-shadow: 0 0 2px #dad2e9; position: relative; margin: 2px; padding: 20px; background-color: #673ab7; color: white">
-                              <div class="card-body" style="background-color: #673ab7; color: white">
-                                <p class="card-text" style="font-size: 15px;">“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.”</p>
-                                <br>
-                                <h3  style="font-weight: 600;">- Lolita </h3>
-                              </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-    <br><br><br>
-
+         
         </section>
+		<hr>
+		<br><br>
 
-<section id ="Videos">
-	<div class="container">
-		<div class="col-md-offset-1" >
-		
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-   
-				<ol class="carousel-indicators">
-				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				  <li data-target="#myCarousel" data-slide-to="1"></li>
-				  <li data-target="#myCarousel" data-slide-to="2"></li>
-				 </ol>
 
-    
-					<div class="carousel-inner">
 
-					  <div class="item active">
-							<iframe  src="https://www.youtube.com/embed/JGf9wM3IgnQ" width="100%" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-					  </div>
 
-					  <div class="item">
-							<iframe  src="https://www.youtube.com/embed/_vKnb-RMGis" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                       
-						</div>
-    
-						<div class="item">
-							<iframe  src="https://www.youtube.com/embed/pcIlysbxqN4" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-						</div>
-					</div>
 
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					  <span class="glyphicon glyphicon-chevron-left"></span>
-					  <span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
-					  <span class="glyphicon glyphicon-chevron-right"></span>
-					  <span class="sr-only">Next</span>
-					</a>
-			</div>
-		</div>
-	</div>
 
-<br><br><br>
-			<a href="https://www.youtube.com/channel/UCGM2iv8sUCrtAVWwItM8REw " class="btn btn-info" role="button" style="margin-left:50% ">Learn more...</a>
- 
-</div>	  
-		<br><br><br>
+    <section id ="Videos">
+      <div class="container">
 
+        <h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Our Youtube </h1>
+        <h3 class="text-center m-5">
+            Feel free to have a look at our clips
+        </h3>
+
+        <div class="row">
+          <div class="col-lg-12 col-12 col-sm-12" >
+        
+            <div class="card text-center">
+              
+              <div style="background: #222;" class="card-body">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="3000">
+                      <iframe  src="https://www.youtube.com/embed/JGf9wM3IgnQ" width="100%" height="500" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                      <iframe  src="https://www.youtube.com/embed/_vKnb-RMGis" width="100%" height="500" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                      <iframe  src="https://www.youtube.com/embed/pcIlysbxqN4" width="100%" height="500" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                  </div>
+                  <a  class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                
+              </div>
+              
+            </div>
+
+        
+          
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+  <div style="text-align: center;">
+    <a style=" background: linear-gradient(to right, #673ab7, #512da8);" href="https://www.youtube.com/channel/UCGM2iv8sUCrtAVWwItM8REw " class="btn btn-lg text-white" role="button" >Visit channel</a>
+  </div>
+  <br><br>
+
+
+</section>
         
 
 <section id="Register">
 
   <hr>
-  <div class="card text-white  mb-3 " style="background-color: #222;max-width: 25rem;position:relative;margin:auto;top:10vh;left:0;bottom:0;right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card text-white  mb-3 " style="background-color: #222;max-width: 25rem;position:relative;margin:auto;top:6vh;left:0;bottom:0;right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
     <div style="letter-spacing: 2px;" class="card-header text-center m-3"><h3>Register</h3></div>
     <div class="card-body mt-1 mb-3">
-        <form>
+
+        <form name="submit-to-google-sheet">
             <div class="form-group">
-                <label for="exampleInputName">Name</label>
-                <input type="text" class="form-control" id="exampleInputName" aria-describedby="exampleInputName" required>
+                <label for="name">Name</label>
+                <input name="name" type="text" class="form-control" id="name" aria-describedby="name" required>
               </div>
               <br>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required >
+              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required >
             </div>
             <br>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1"  required>
+              <label for="exampleInputPassword1">Mobile Number</label>
+              <input name="mobile" type="number" class="form-control" id="exampleInputPassword1" min="0" required>
             </div>
             <br>
-            <div class="form-group pb-2">
-                <label for="exampleInputPassword2">Confirm Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword2"  required>
-              </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Course name</label>
+              <input name="course" type="text" class="form-control" id="exampleInputPassword2" required>
+            </div>
               <hr>
            <div class="text-center pt-2">
-            <button style="  background: linear-gradient(to right, #673ab7, #512da8);" type="submit" class="btn text-white btn-lg btn-block rounded-pill">Register</button>
+            <button type="submit" style="  background: linear-gradient(to right, #673ab7, #512da8);"  class="btn text-white btn-lg btn-block rounded-pill">Register</button>
            </div>
           </form>
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwRBaUUrqXy8mB2QYOC8NB4B2JTm1AofeLQKxroBxuo8RtLJpw/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+                
+               
+                 var Stud_name = document.getElementById('name').value;
+
+                        Email.send({
+                            SecureToken : "8489df9a-9429-4551-ad95-9a9a2bb0354a",
+                            To : 'admin@blossom.org.in',
+                            From : "18ita13@karpagamtech.ac.in",
+                            Subject : "Blossom | Notification",
+                            Body : Stud_name +" is registered."
+                        }).then(
+                          message => alert(message)
+                        );
+            })
+          </script>
+          
 
     </div>
   </div>
@@ -334,25 +378,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
       <!--for testimonial -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
-
-      <!-- for testimonial-->
-    <script >
       
-      $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items:3,
-    
-        margin:30,
-        loop:true,
-        dots:true
- 
-    });
-  });
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
 
-    </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+      <script src="js/carousel.js "></script>
+  
   
   </body>
 </html>
