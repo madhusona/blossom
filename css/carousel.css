@@ -1,3 +1,10 @@
+.bac{
+  background-image:url('/img/bac.png');
+  
+}
+.ba{
+  background-image:url('/img/ba.gif');
+}
 .shadow-effect {
   background: #fff;
   padding: 60px;
