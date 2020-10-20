@@ -1,3 +1,4 @@
+
 .bac{
   background-image:url('/img/bac.png');
   
@@ -75,89 +76,28 @@
   width: 20px;
 }
 
-
-
-
-.buttonDownload {
-	display: inline-block;
-	position: relative;
-	padding: 10px 25px;
-  
-	background-color: #c71313;
-	color: white;
-  
-	font-family: sans-serif;
-	text-decoration: none;
-	font-size: 0.9em;
-	text-align: center;
-	text-indent: 15px;
-}
-
-.buttonDownload:hover {
-	background-color: rgb(235, 213, 16);
-	color: white;
-}
-
-.buttonDownload:before, .buttonDownload:after {
-	content: ' ';
-	display: block;
-	position: absolute;
-	left: 15px;
-	top: 52%;
-}
-
-/* Download box shape  */
-.buttonDownload:before {
-	width: 10px;
-	height: 2px;
-	border-style: solid;
-	border-width: 0 2px 2px;
-}
-
-/* Download arrow shape */
-.buttonDownload:after {
-	width: 0;
-	height: 0;
-	margin-left: 3px;
-	margin-top: -7px;
-  
-	border-style: solid;
-	border-width: 4px 4px 0 4px;
-	border-color: transparent;
-	border-top-color: inherit;
-	
-	animation: downloadArrow 2s linear infinite;
-	animation-play-state: paused;
-}
-
-.buttonDownload:hover:before {
-	border-color: #4CC713;
-}
-
-.buttonDownload:hover:after {
-	border-top-color: #4CC713;
-	animation-play-state: running;
-}
-
-/* keyframes for the download icon anim */
-@keyframes downloadArrow {
-	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
-	0% {
-		margin-top: -7px;
-		opacity: 1;
-	}
-	
-	0.001% {
-		margin-top: -15px;
-		opacity: 0;
-	}
-	
-	50% {
-		opacity: 1;
-	}
-	
-	100% {
-		margin-top: 0;
-		opacity: 0;
-	}
-}
+a.button1{
+  background-color: #FFFFFF;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #673ab7;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#673ab7;
+  text-align:center;
+  transition: all 0.2s;
+  }
+  a.button1:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+  @media all and (max-width:30em){
+   a.button1{
+  display:block;
+  margin:0.4em auto;
+  }
+  }
