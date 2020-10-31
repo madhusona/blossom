@@ -1,4 +1,6 @@
-
+.navbar{
+  min-height:50px;
+}
 
 .bac{
   background-image:url('/img/bac.png');
