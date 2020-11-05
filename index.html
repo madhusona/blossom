@@ -502,19 +502,123 @@
 
   </section>
 
-
+<br>
   <!-- Register -->
 
-  <section id="Register">
-    <h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Registration</h1>
+  <section id="Register" class="container-fluid bg-light">
+    <form name="submit-to-google-sheet">
+      <div class="form-row">
+        
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Name</label>
+          <input name="name" type="name" class="form-control" id="inputName" placeholder="Name">
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input name="address" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputState">Designation</label>
+        <select name="designation" id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>Student</option>
+          <option>Job Seeker</option>
+          <option>Professional</option>
+          <option>Abroad aspirant</option>
+        </select>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="inputState">Which course would you like to take? </label>
+        <select name="course" id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>IELTS/TOEFL</option>
+          <option>Academic English</option>
+          <option>English for Basic Communication</option>
+          <option>English for job</option>
+        </select>
+      </div>
+    </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputCity">Which program would you like to take?</label>
+         
+        </div>
+        <div class="form-group col-md-4">
+          <input class="form-check-input" type="radio" name="program" id="gridRadios2" value="Term Course">
+              <label class="form-check-label" for="gridRadios2">
+                Term Course
+              </label>
+        </div>
+        <div class="form-group col-md-4">
+          <input class="form-check-input" type="radio" name="program" id="gridRadios1" value="Crash Course" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Crash Course
+              </label>
+        </div>
+      </div>
+
+    
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputCity">Mode of payment</label>
+         
+        </div>
+        <div class="form-group col-md-4">
+          <input class="form-check-input" type="radio" name="mop" id="gridRadios2" value="Account Transfer">
+              <label class="form-check-label" for="gridRadios2">
+                Account Transfer
+              </label>
+        </div>
+        <div class="form-group col-md-4">
+          <input class="form-check-input" type="radio" name="mop" id="gridRadios1" value="GPay" checked>
+              <label class="form-check-label" for="gridRadios1">
+                GPay
+              </label>
+        </div>
+      </div>
+      <div class="form-row"> 
+      <div class="form-group col-md-6">
+        <label for="inputAddress">Date</label>
+        <input name="dop" type="text" class="form-control" id="inputAddress" placeholder="dd/mm/yyyy">
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="inputAddress">Transaction No</label>
+        <input name="transaction" type="text" class="form-control" id="inputAddress" placeholder="">
+      </div>
+     </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyUWT8q6aoIFfreDygSP82J5zy-LgIKqrvX19qzyGmDp65sOPA/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(row => console.log('Success!', row))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+ <!--   <h1 style="font-weight: bold;letter-spacing: 1px;" class="text-center m-5">Registration</h1>
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item iframeSean" 
         src="https://docs.google.com/forms/d/e/1FAIpQLSckTLW3gw5i1ycdlT7aq1wiqbCFDGy-YcIyFHE7-ojbfJa7hA/viewform?embedded=true"></iframe>
     </div>
-
+-->
   </section>
 
-
+<br>
 
   <section id="Contact">
    
@@ -568,7 +672,7 @@
 
   <script src="js/carousel.js "></script>
   <script>
-    $('#mymodal').modal('show')
+    $('#mymodal').modal('hide')
   </script>
 
 </body>
