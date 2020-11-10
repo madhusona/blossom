@@ -1,6 +1,14 @@
-.navbar{
-  min-height:50px;
+.first-nav{
+  background: white;
+  min-height: 15px !important;
+  font-size: 12px;
 }
+
+.second-nav{
+  top: 18px !important;
+}
+
+
 
 .bac{
   background-image:url('/img/bac.png');
@@ -119,3 +127,4 @@ a.button1{
     100%{top:0em;}
     }
 
+    
